@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Screenshot Extension",
+  "author": {
+    "email": "hamed.ghasemi.gl@gmail.com"
+  },
+  "version": "1.0",
+  "description": "Take screenshots!",
+  "icons": {
+    "16": "Icons/icons8-screenshot-color-hand-drawn-16.png",
+    "32": "Icons/icons8-screenshot-color-hand-drawn-32.png",
+    "96": "Icons/icons8-screenshot-color-hand-drawn-96.png"
+  },
+  "permissions": ["activeTab", "tabs", "downloads"],
+  "background": {
+    "scripts": ["screenshot.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "Icons/icons8-screenshot-color-hand-drawn-96.png",
+    "default_popup": "popup.html"
+  }
+}
